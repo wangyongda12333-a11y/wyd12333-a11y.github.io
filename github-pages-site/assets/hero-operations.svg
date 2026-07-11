@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Tactical operations desk">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#050807"/>
+      <stop offset="0.52" stop-color="#0b1310"/>
+      <stop offset="1" stop-color="#11170f"/>
+    </linearGradient>
+    <radialGradient id="signal" cx="72%" cy="58%" r="42%">
+      <stop offset="0" stop-color="#8cf49a" stop-opacity="0.35"/>
+      <stop offset="0.35" stop-color="#4bdd67" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#050807" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0v72" fill="none" stroke="#8cf49a" stroke-opacity="0.12"/>
+    </pattern>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)" opacity="0.36"/>
+  <rect width="1600" height="900" fill="url(#signal)"/>
+  <g opacity="0.88">
+    <path d="M650 605 1440 530 1580 780 780 850Z" fill="#111915" stroke="#8cf49a" stroke-opacity="0.26"/>
+    <path d="M720 625 1390 565 1508 746 820 806Z" fill="#080d0b" stroke="#8cf49a" stroke-opacity="0.22"/>
+    <path d="M760 666c120-34 252-44 374-24 84 14 168 10 262-18" fill="none" stroke="#8cf49a" stroke-opacity="0.55" stroke-width="3"/>
+    <path d="M790 710c124-48 248-53 372-18 88 25 168 14 260-24" fill="none" stroke="#d6b96c" stroke-opacity="0.36" stroke-width="2"/>
+    <path d="M835 745c128-30 230-34 342-4 84 22 168 12 260-18" fill="none" stroke="#8cf49a" stroke-opacity="0.4" stroke-width="2"/>
+    <g fill="#8cf49a">
+      <circle cx="885" cy="682" r="6"/>
+      <circle cx="1118" cy="646" r="5"/>
+      <circle cx="1326" cy="628" r="7"/>
+      <circle cx="1236" cy="720" r="5"/>
+      <circle cx="965" cy="752" r="5"/>
+    </g>
+  </g>
+  <g transform="translate(1085 270)" opacity="0.82">
+    <rect width="360" height="210" rx="10" fill="#0b1210" stroke="#8cf49a" stroke-opacity="0.32"/>
+    <rect x="22" y="24" width="316" height="162" fill="#050807" stroke="#8cf49a" stroke-opacity="0.18"/>
+    <path d="M48 145c34-58 90-76 152-46 48 23 86 12 114-36" fill="none" stroke="#8cf49a" stroke-opacity="0.7" stroke-width="3"/>
+    <path d="M46 66h270M46 104h270M88 42v122M170 42v122M252 42v122" stroke="#8cf49a" stroke-opacity="0.16"/>
+    <circle cx="228" cy="96" r="34" fill="none" stroke="#8cf49a" stroke-opacity="0.45"/>
+  </g>
+  <g opacity="0.38" filter="url(#soft)">
+    <rect x="980" y="155" width="120" height="350" fill="#4bdd67"/>
+    <rect x="780" y="120" width="60" height="430" fill="#b7ffc0"/>
+  </g>
+  <g opacity="0.48">
+    <path d="M950 238h90l34 235H910Z" fill="#1b221b"/>
+    <path d="M860 312h90l-18 164H810Z" fill="#171f18"/>
+    <path d="M1015 290h118l40 200H992Z" fill="#151c16"/>
+  </g>
+  <rect width="760" height="900" fill="#050807" opacity="0.72"/>
+</svg>
