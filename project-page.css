@@ -1,0 +1,24 @@
+:root {
+  color-scheme: dark;
+  --green: #8cf49a;
+}
+
+* { box-sizing: border-box; }
+
+html, body { min-height: 100%; }
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(rgba(140, 244, 154, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(140, 244, 154, 0.035) 1px, transparent 1px),
+    #050807;
+  background-size: 72px 72px;
+  color: #f4f8f2;
+  font-family: Inter, "Microsoft YaHei", Arial, sans-serif;
+}
+
+.project-canvas {
+  width: 100%;
+  min-height: 100vh;
+}

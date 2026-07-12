@@ -8,7 +8,7 @@
       content="三角洲综合接单展示站，提供陪玩车队、任务协助、地图指导与定制需求咨询。"
     >
     <title>三角洲综合接单 | 车队陪玩与任务协助</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=empty-projects-1">
   </head>
   <body>
     <header class="site-header" id="top">
@@ -25,17 +25,50 @@
         <a href="#process">流程</a>
         <a href="#contact">联系</a>
       </nav>
-      <a class="header-cta" href="#contact">立即咨询</a>
+      <button class="header-cta menu-toggle" type="button" aria-expanded="false" aria-controls="more-menu">
+        <span>更多</span><i aria-hidden="true"></i>
+      </button>
     </header>
+
+    <div class="menu-backdrop" aria-hidden="true"></div>
+    <div class="menu-prelayers" aria-hidden="true"><div></div><div></div></div>
+    <aside class="more-menu" id="more-menu" aria-hidden="true" aria-label="更多项目">
+      <div class="more-menu-head">
+        <div><small>QUICK ACCESS</small><strong>更多项目</strong></div>
+        <button class="menu-close" type="button" aria-label="关闭更多菜单"><span>关闭</span><i aria-hidden="true"></i></button>
+      </div>
+      <nav class="more-menu-grid" aria-label="快捷项目导航">
+        <a href="projects/project-01.html"><span>01</span><strong>项目 01</strong></a>
+        <a href="projects/project-02.html"><span>02</span><strong>项目 02</strong></a>
+        <a href="projects/project-03.html"><span>03</span><strong>项目 03</strong></a>
+        <a href="projects/project-04.html"><span>04</span><strong>项目 04</strong></a>
+        <a href="projects/project-05.html"><span>05</span><strong>项目 05</strong></a>
+        <a href="projects/project-06.html"><span>06</span><strong>项目 06</strong></a>
+        <a href="projects/project-07.html"><span>07</span><strong>项目 07</strong></a>
+        <a href="projects/project-08.html"><span>08</span><strong>项目 08</strong></a>
+        <a href="projects/project-09.html"><span>09</span><strong>项目 09</strong></a>
+        <a href="projects/project-10.html"><span>10</span><strong>项目 10</strong></a>
+      </nav>
+    </aside>
 
     <main>
       <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+          <source src="assets/hero-background.mp4" type="video/mp4">
+        </video>
         <div class="hero-bg" role="img" aria-label="战术行动室背景图"></div>
         <div class="hero-overlay"></div>
+        <div class="hero-frost"></div>
         <div class="hero-grid"></div>
         <div class="hero-content">
           <p class="eyebrow">综合接单 · 车队陪玩 · 任务协助</p>
-          <h1>找靠谱队友，少走弯路，快速进入状态。</h1>
+          <h1
+            data-split-text
+            data-split-ready="true"
+            aria-label="找靠谱队友，少走弯路，快速进入状态。"
+          >
+            <span class="split-char" aria-hidden="true" style="--split-index: 0">找</span><span class="split-char" aria-hidden="true" style="--split-index: 1">靠</span><span class="split-char" aria-hidden="true" style="--split-index: 2">谱</span><span class="split-char" aria-hidden="true" style="--split-index: 3">队</span><span class="split-char" aria-hidden="true" style="--split-index: 4">友</span><span class="split-char" aria-hidden="true" style="--split-index: 5">，</span><span class="split-char" aria-hidden="true" style="--split-index: 6">少</span><span class="split-char" aria-hidden="true" style="--split-index: 7">走</span><span class="split-char" aria-hidden="true" style="--split-index: 8">弯</span><span class="split-char" aria-hidden="true" style="--split-index: 9">路</span><span class="split-char" aria-hidden="true" style="--split-index: 10">，</span><span class="split-char" aria-hidden="true" style="--split-index: 11">快</span><span class="split-char" aria-hidden="true" style="--split-index: 12">速</span><span class="split-char" aria-hidden="true" style="--split-index: 13">进</span><span class="split-char" aria-hidden="true" style="--split-index: 14">入</span><span class="split-char" aria-hidden="true" style="--split-index: 15">状</span><span class="split-char" aria-hidden="true" style="--split-index: 16">态</span><span class="split-char" aria-hidden="true" style="--split-index: 17">。</span>
+          </h1>
           <p class="hero-copy">
             面向三角洲玩家的综合服务展示站：陪玩车队、任务路线、物资认图、地图节奏和定制需求咨询。
             不碰外挂，不做违规承诺，只做清楚、稳定、可沟通的协助。
@@ -188,7 +221,7 @@
         </ol>
       </section>
 
-      <section class="section trust-section">
+      <section class="section trust-section" id="trust">
         <div class="section-heading">
           <p class="eyebrow">Trust</p>
           <h2>为什么可以放心咨询</h2>
@@ -199,14 +232,21 @@
               <span>近期反馈</span>
               <strong>语音沟通 / 按需安排 / 目标明确</strong>
             </div>
-            <div class="mock-screenshot" aria-label="战绩与反馈占位展示">
-              <div></div>
-              <div></div>
-              <div></div>
+            <div class="feedback-carousel" aria-label="近期反馈轮播图">
+              <div class="feedback-carousel-track">
+                <button class="feedback-frame" type="button" data-feedback-index="0" aria-label="放大查看反馈图片 1"></button>
+                <button class="feedback-frame" type="button" data-feedback-index="1" aria-label="放大查看反馈图片 2"></button>
+                <button class="feedback-frame" type="button" data-feedback-index="2" aria-label="放大查看反馈图片 3"></button>
+              </div>
+              <div class="feedback-dots" aria-label="切换反馈图片">
+                <button class="is-active" type="button" data-feedback-dot="0" aria-label="查看第 1 张"></button>
+                <button type="button" data-feedback-dot="1" aria-label="查看第 2 张"></button>
+                <button type="button" data-feedback-dot="2" aria-label="查看第 3 张"></button>
+              </div>
             </div>
-            <p>这里可以替换成你的真实战绩截图、客户评价截图或接单记录。</p>
+            <p>点击图片可放大查看细节，按 Esc 或点击空白处退出。</p>
           </div>
-          <div class="rules-panel">
+          <div class="rules-panel" id="rules">
             <h3>服务规则</h3>
             <ul>
               <li>不承诺“包赢”“必出”等不可控结果。</li>
@@ -217,6 +257,15 @@
           </div>
         </div>
       </section>
+
+      <div class="feedback-lightbox" role="dialog" aria-modal="true" aria-label="近期反馈大图浏览" aria-hidden="true">
+        <figure class="feedback-enlarged" aria-label="放大的反馈图片"></figure>
+        <div class="lightbox-dots" aria-label="切换放大的反馈图片">
+          <button class="is-active" type="button" data-lightbox-dot="0" aria-label="查看第 1 张"></button>
+          <button type="button" data-lightbox-dot="1" aria-label="查看第 2 张"></button>
+          <button type="button" data-lightbox-dot="2" aria-label="查看第 3 张"></button>
+        </div>
+      </div>
 
       <section class="section contact-section" id="contact">
         <div class="contact-card">
@@ -261,6 +310,6 @@
     </footer>
 
     <div class="toast" role="status" aria-live="polite"></div>
-    <script src="script.js"></script>
+    <script src="script.js?v=empty-projects-1"></script>
   </body>
 </html>
