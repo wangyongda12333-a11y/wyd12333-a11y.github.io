@@ -36,6 +36,49 @@ document.querySelectorAll("[data-copy]").forEach((button) => {
   });
 });
 
+const revealTargets = [
+  ".intro-band .metric",
+  ".section-heading",
+  ".service-card",
+  ".package-card",
+  ".process-list li",
+  ".proof-panel",
+  ".rules-panel",
+  ".contact-card",
+];
+
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (!prefersReducedMotion) {
+  const revealItems = document.querySelectorAll(revealTargets.join(","));
+
+  revealItems.forEach((item, index) => {
+    item.classList.add("reveal");
+    item.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 80}ms`);
+  });
+
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.16,
+      rootMargin: "0px 0px -8% 0px",
+    }
+  );
+
+  revealItems.forEach((item) => {
+    revealObserver.observe(item);
+  });
+}
+
 document.querySelectorAll("[data-scroll-top]").forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
