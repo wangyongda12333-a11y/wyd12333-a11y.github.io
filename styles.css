@@ -51,7 +51,7 @@ body {
   }
 
   50% {
-    transform: scale(1.045) translate3d(-0.8rem, 0.45rem, 0);
+    transform: scale(1.06) translate3d(-1.4rem, 0.9rem, 0);
   }
 }
 
@@ -188,11 +188,11 @@ button {
 }
 
 .hero-bg {
-  background-image: url("assets/hero-operations.svg");
+  background-image: url("assets/hero-operations.svg"), url("资产/hero-operations.svg");
   background-size: cover;
   background-position: center;
   opacity: 0.88;
-  animation: backgroundDrift 18s ease-in-out infinite;
+  animation: backgroundDrift 12s ease-in-out infinite;
   transform-origin: center;
   will-change: transform;
 }
@@ -209,8 +209,8 @@ button {
     linear-gradient(90deg, rgba(140, 244, 154, 0.08) 1px, transparent 1px);
   background-size: 76px 76px;
   mask-image: linear-gradient(90deg, black, transparent 72%);
-  opacity: 0.42;
-  animation: gridScan 22s linear infinite;
+  opacity: 0.55;
+  animation: gridScan 12s linear infinite;
 }
 
 .hero-content {
@@ -291,7 +291,7 @@ h1 {
   background: rgba(5, 8, 7, 0.58);
   padding: 0.7rem 0.9rem;
   color: #dce5dc;
-  animation: signalPulse 5s ease-in-out infinite;
+  animation: signalPulse 3.2s ease-in-out infinite;
 }
 
 .section {
@@ -656,8 +656,8 @@ h1 {
 
 .reveal {
   opacity: 0;
-  transform: translateY(26px);
-  transition: opacity 640ms ease, transform 640ms ease;
+  transform: translateY(34px);
+  transition: opacity 760ms ease, transform 760ms ease;
   transition-delay: var(--reveal-delay, 0ms);
   will-change: opacity, transform;
 }
